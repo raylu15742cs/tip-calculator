@@ -2,6 +2,7 @@ let cool = document.getElementById("main")
 
 const itstime = () => {
     let input1 = document.createElement("input")
+    input1.type = "number";
     let button1 = document.createElement("button")
     button1.innerHTML = 'Calculate';
     cool.appendChild(input1)
