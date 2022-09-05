@@ -1,7 +1,15 @@
-
+* {
+    margin: 0;
+}
 body {
     height : 30vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+button {
+    width :20vw;
+}
+input {
+    width: 75vw;
+    margin-left: 1vw;
 }
