@@ -40,6 +40,25 @@ const itstime = () => {
       }
     });
     cool.appendChild(button2)
+
+    let button3 = document.createElement('button');
+    button3.innerHTML = '20%';
+    button3.addEventListener('click', function () {
+      if (input1.value > 1) {
+        console.log(input1.value);
+        let new1 = Math.ceil(parseFloat(input1.value * 1.2));
+        let tip = parseFloat(new1 - input1.value).toFixed(2);
+        let final = document.createElement('p');
+        final.innerHTML = `Tips : ${tip} Total : ${new1}`;
+        cool.appendChild(final);
+        console.log(
+          new1,
+          input1.value,
+          parseFloat(new1 - input1.value).toFixed(2)
+        );
+      }
+    });
+    cool.appendChild(button3);
 }
 
 
